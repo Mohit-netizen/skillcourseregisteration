@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms</title>
+    <style>
+        * {
+            color: #2596be; /* Set text color to blue */
+        }
+    </style>
+</head>
+<body style="background-color: white;">
+
+<form action="process.php" method="post">
+    <fieldset enabled>
+        <legend>Registration Form</legend>
+
+        <label>Username: <input type="text" autocomplete="Username" name="username" placeholder="Username" maxlength="10" required></label> 
+        
+        <br><br>
+        
+        <label>Password: <input type="password" name="password" placeholder="Password" required></label><br><br>
+        
+        <label>Date of Birth: <input type="date" name="dob" required></label><br><br>
+
+
+        <label>*Email: <input type="email" autocomplete="email" name="email" placeholder="email" required></label>
+        <br><br>
+        <a href="Form1.Html" class="button" type="submit" name="submit" value="Login">Login</a>
+        <input type="reset" name="reset" value="Reset">
+        <br>
+        <pre><h6 style="color: black;">*Two step process</h6><img src="step1.png" alt="step1" width="50" height="50"></pre>
+    </fieldset>
+</form>
+
+</body>
+</html>
