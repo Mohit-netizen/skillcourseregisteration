@@ -18,6 +18,7 @@
         
         <label>Select Level:</label>
         <select name="level">
+            <option value="">Select Level</option>
             <option value="a-level">A Level</option>
             <option value="o-level">O Level</option>
             <option value="b-level">B Level</option>
@@ -84,6 +85,10 @@
         </select>
        
         <br><br>
+        <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" minlength="10" maxlength="10" required>
+    <small style="color: black;">10 digits required</small>
+       <br><br>
 
         <input type="radio" value="class XI" name="class" required>Class XI
         <input type="radio" value="class XII" name="class">Class XII<br><br>
@@ -112,6 +117,7 @@
 <select id="income" name="income" required>
     <optgroup label="Income certificate available"></optgroup>
         <option value="10000">Less then 4 lakhs</option>
+        <option value="10000" >Not Applicable</option>
     <optgroup label="City Tier 1">
         <option value="10000">City Tier 1 - (30% concession)</option>
     </optgroup>
@@ -130,7 +136,9 @@
 <select id="income" name="income" required>
     <optgroup label="Income certificate available"></optgroup>
         <option value="10000" disabled>In betwwen 4 to 8 lakhs</option>
+        <option value="10000" >Not Applicable</option>
     <optgroup label="City Tier 1">
+        
         <option value="10000">City Tier 1 - (50% concession)</option>
     </optgroup>
     <optgroup label="City Tier 2">
@@ -156,7 +164,9 @@
         <img src="step2.png" alt="step2" width="50" height="50">
         <br>
     </fieldset>
+
 </form>
+<h6 style="color: black;">&copy; 2024 Institute. All rights reserved.</h6>
 
 </body>
 </html>
